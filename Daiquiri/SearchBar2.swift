@@ -9,7 +9,7 @@ struct SearchBar2: UIViewRepresentable {
     @Binding var text: String
     
     class Coordinator: NSObject, UISearchBarDelegate{
-        
+       //updates the current state of the view
         @Binding var text: String
         
         init(text: Binding<String>){
@@ -20,26 +20,31 @@ struct SearchBar2: UIViewRepresentable {
                        searchText: String){
             text = searchText
         }
+        //tells the delegate that the user changed the search text
         
     }
     
     func makeCoordinator() -> SearchBar2.Coordinator {
         return Coordinator(text: self.$text)
-    }
+    }//custom instance to communicate changes from view controller to SwiftUI interface
     
     func makeUIView(context: UIViewRepresentableContext<SearchBar2>) -> UISearchBar {
         let searchBar2 = UISearchBar(frame: .zero)
+        //location and size of the search bar on declaration
         searchBar2.delegate = context.coordinator
+        //delegate of the search bar to modify its behaviour
         searchBar2.autocapitalizationType = .words
+        //autocapitalization for the first letter of each word
         searchBar2.placeholder = "Search..."
+        //text displayed on top of the search bar
         
         return searchBar2
         
-    }
+    }//initial state of the view
     
     func updateUIView(_ uiView: UISearchBar, context: UIViewRepresentableContext<SearchBar2>) {
         uiView.text = text
-    }
+    }//updated state of the view
     
 }
 
