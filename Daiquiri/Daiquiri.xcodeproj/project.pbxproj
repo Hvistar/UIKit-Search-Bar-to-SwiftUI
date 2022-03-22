@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		299725C927EA1D3300B00A44 /* NonModalButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299725C827EA1D3300B00A44 /* NonModalButtonView.swift */; };
 		7661C25527E9DCB200B5511E /* DaiquiriApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C25427E9DCB200B5511E /* DaiquiriApp.swift */; };
 		7661C25727E9DCB200B5511E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C25627E9DCB200B5511E /* ContentView.swift */; };
 		7661C25927E9DCB300B5511E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7661C25827E9DCB300B5511E /* Assets.xcassets */; };
@@ -16,7 +17,6 @@
 		7661C27227E9DCB300B5511E /* DaiquiriUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C27127E9DCB300B5511E /* DaiquiriUITestsLaunchTests.swift */; };
 		7661C27F27E9DCFA00B5511E /* SearchBar2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C27E27E9DCFA00B5511E /* SearchBar2.swift */; };
 		7661C28127E9DF3200B5511E /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7661C28027E9DF3200B5511E /* Storyboard.storyboard */; };
-		7661C28327E9E44300B5511E /* NonModalButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C28227E9E44300B5511E /* NonModalButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		299725C827EA1D3300B00A44 /* NonModalButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonModalButtonView.swift; sourceTree = "<group>"; };
 		7661C25127E9DCB200B5511E /* Daiquiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daiquiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7661C25427E9DCB200B5511E /* DaiquiriApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiquiriApp.swift; sourceTree = "<group>"; };
 		7661C25627E9DCB200B5511E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		7661C27127E9DCB300B5511E /* DaiquiriUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiquiriUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7661C27E27E9DCFA00B5511E /* SearchBar2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar2.swift; sourceTree = "<group>"; };
 		7661C28027E9DF3200B5511E /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		7661C28227E9E44300B5511E /* NonModalButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NonModalButtonView.swift; path = ../../../../../Frontend/Frontend/NonModalButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +103,10 @@
 				7661C25427E9DCB200B5511E /* DaiquiriApp.swift */,
 				7661C27E27E9DCFA00B5511E /* SearchBar2.swift */,
 				7661C25627E9DCB200B5511E /* ContentView.swift */,
-				7661C28227E9E44300B5511E /* NonModalButtonView.swift */,
 				7661C28027E9DF3200B5511E /* Storyboard.storyboard */,
 				7661C25827E9DCB300B5511E /* Assets.xcassets */,
 				7661C25A27E9DCB300B5511E /* Preview Content */,
+				299725C827EA1D3300B00A44 /* NonModalButtonView.swift */,
 			);
 			path = Daiquiri;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 			files = (
 				7661C27F27E9DCFA00B5511E /* SearchBar2.swift in Sources */,
 				7661C25727E9DCB200B5511E /* ContentView.swift in Sources */,
-				7661C28327E9E44300B5511E /* NonModalButtonView.swift in Sources */,
+				299725C927EA1D3300B00A44 /* NonModalButtonView.swift in Sources */,
 				7661C25527E9DCB200B5511E /* DaiquiriApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,7 +429,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Daiquiri/Preview Content\"";
-				DEVELOPMENT_TEAM = KSNTS7VQAQ;
+				DEVELOPMENT_TEAM = PMGDGYXM4J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -458,7 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Daiquiri/Preview Content\"";
-				DEVELOPMENT_TEAM = KSNTS7VQAQ;
+				DEVELOPMENT_TEAM = PMGDGYXM4J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
