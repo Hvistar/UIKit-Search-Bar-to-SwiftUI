@@ -8,6 +8,8 @@ struct SearchBar2: UIViewRepresentable {
     //to make UIKit code integrate into SwiftUI
     @Binding var text: String
     
+    let backgroundImage = UIImage(named: "Untitled 2.png")
+    
     class Coordinator: NSObject, UISearchBarDelegate{
        //updates the current state of the view
         @Binding var text: String
@@ -29,14 +31,26 @@ struct SearchBar2: UIViewRepresentable {
     }//custom instance to communicate changes from view controller to SwiftUI interface
     
     func makeUIView(context: UIViewRepresentableContext<SearchBar2>) -> UISearchBar {
+        
         let searchBar2 = UISearchBar(frame: .zero)
         //location and size of the search bar on declaration
+        
+        /** Some examples of Search Bar customisation */
+        
+        searchBar2.searchBarStyle = .minimal
+        //search bar style: minimal removes background and gives a cleaner appearance
         searchBar2.delegate = context.coordinator
         //delegate of the search bar to modify its behaviour
         searchBar2.autocapitalizationType = .words
         //autocapitalization for the first letter of each word
         searchBar2.placeholder = "Search..."
         //text displayed on top of the search bar
+        searchBar2.prompt = "Prompt..."
+        //line of text to be displayed on top of the search bar
+        searchBar2.barTintColor = .red
+        //tint color of the bar's background, no effect if searchBarStyle is minimal
+        searchBar2.tintColor = .red
+        //tint color of the bar's main element
         
         return searchBar2
         
