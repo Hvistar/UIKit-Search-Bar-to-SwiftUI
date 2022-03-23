@@ -56,6 +56,22 @@ struct SearchBar2: UIViewRepresentable {
         //change the search bar icon
         searchBar2.setSearchFieldBackgroundImage(backgroundImage, for: .normal)
         //sets a background image for the search field
+//        searchBar2.setBackgroundImage(backgroundImage, for: .bottom, barMetrics: .compact)
+        
+        if let textfield = searchBar2.value(forKey: "searchField") as? UITextField {
+            textfield.backgroundColor = UIColor.yellow
+        }
+        //sets search bar textfield colour
+        
+        if let textfieldText = searchBar2.value(forKey: "searchField") as? UITextField {
+            textfieldText.textColor = UIColor.black
+        }
+        //sets typing text colour
+        
+        if let textfieldPlaceholder = searchBar2.value(forKey: "searchField") as? UITextField {
+            textfieldPlaceholder.attributedPlaceholder = NSAttributedString(string: textfieldPlaceholder.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : UIColor.red])
+        }
+        //sets placeholder text colour
         
         return searchBar2
         

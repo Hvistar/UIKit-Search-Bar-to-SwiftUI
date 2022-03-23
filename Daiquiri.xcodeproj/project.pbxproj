@@ -15,7 +15,6 @@
 		7661C27027E9DCB300B5511E /* DaiquiriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C26F27E9DCB300B5511E /* DaiquiriUITests.swift */; };
 		7661C27227E9DCB300B5511E /* DaiquiriUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C27127E9DCB300B5511E /* DaiquiriUITestsLaunchTests.swift */; };
 		7661C27F27E9DCFA00B5511E /* SearchBar2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C27E27E9DCFA00B5511E /* SearchBar2.swift */; };
-		7661C28327E9E44300B5511E /* NonModalButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C28227E9E44300B5511E /* NonModalButtonView.swift */; };
 		76867AD427EB3D53009A00F8 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76867AD327EB3D53009A00F8 /* Client.swift */; };
 		76867AD627EB3F8D009A00F8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76867AD527EB3F8D009A00F8 /* Data.swift */; };
 /* End PBXBuildFile section */
@@ -49,7 +48,6 @@
 		7661C26F27E9DCB300B5511E /* DaiquiriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiquiriUITests.swift; sourceTree = "<group>"; };
 		7661C27127E9DCB300B5511E /* DaiquiriUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiquiriUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7661C27E27E9DCFA00B5511E /* SearchBar2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar2.swift; sourceTree = "<group>"; };
-		7661C28227E9E44300B5511E /* NonModalButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NonModalButtonView.swift; path = ../../../../../Frontend/Frontend/NonModalButtonView.swift; sourceTree = "<group>"; };
 		76867AD327EB3D53009A00F8 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		76867AD527EB3F8D009A00F8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,7 +105,6 @@
 				7661C25627E9DCB200B5511E /* ContentView.swift */,
 				76867AD327EB3D53009A00F8 /* Client.swift */,
 				76867AD527EB3F8D009A00F8 /* Data.swift */,
-				7661C28227E9E44300B5511E /* NonModalButtonView.swift */,
 				7661C25827E9DCB300B5511E /* Assets.xcassets */,
 				7661C25A27E9DCB300B5511E /* Preview Content */,
 			);
@@ -273,7 +270,6 @@
 				76867AD627EB3F8D009A00F8 /* Data.swift in Sources */,
 				76867AD427EB3D53009A00F8 /* Client.swift in Sources */,
 				7661C25727E9DCB200B5511E /* ContentView.swift in Sources */,
-				7661C28327E9E44300B5511E /* NonModalButtonView.swift in Sources */,
 				7661C25527E9DCB200B5511E /* DaiquiriApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

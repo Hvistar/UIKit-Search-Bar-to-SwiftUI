@@ -12,13 +12,10 @@ struct ContentView: View {
     @State var searchText = ""
     @State var searching = false //pass this to the search bar to modify the navigation bar while searching
     
-//    let clients = [
-//            "Luigi Moretti",
-//            "Giovanni Peroni"
-//        ]
-
-    let paths = [\Client.name, \Client.surname, \Client.address]
-    
+    let clients = [
+            "Luigi Moretti",
+            "Giovanni Peroni"
+        ]
     
     var body: some View {
         
@@ -28,28 +25,20 @@ struct ContentView: View {
                 SearchBar2(text: self.$searchText, color: .green) //fare un esempio di customizzazione
                 List{
                     
-//                    ForEach(searchText.isEmpty ? clients : clients.filter{$0.localizedCaseInsensitiveContains(searchText)}, id:\.self)
-//                    {
-//                        client in
-//                        Text(client)
-//                    }
-
-                    ForEach(clients.filter({searchText.isEmpty ? true : $0.name.localizedCaseInsensitiveContains(self.searchText)}), id:\.self){
+                    ForEach(searchText.isEmpty ? clients : clients.filter{$0.localizedCaseInsensitiveContains(searchText)}, id:\.self)
+                    //checks current string and visualise it if contains the substring searchText
+                    {
                         client in
-                        
-                        HStack{
-                        Text(client.name)
-                        Text(client.surname)
-                        }
+                        Text(client)
+                    }
 
               }
           }
-            .navigationTitle(searchText.isEmpty ? "Inbox" : "Searching")
+            .navigationTitle(searchText.isEmpty ? "Inbox" : "Searching") //changes navigationTitle if the user is typing
        }
         
      }
    }
-}
 //struct ContentView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        ContentView()
