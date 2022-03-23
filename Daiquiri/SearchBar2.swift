@@ -1,4 +1,3 @@
-//
 //  SearchBar2.swift
 
 import SwiftUI
@@ -7,6 +6,7 @@ import Foundation
 struct SearchBar2: UIViewRepresentable {
     //to make UIKit code integrate into SwiftUI
     @Binding var text: String
+    var color: UIColor
     
     let backgroundImage = UIImage(named: "Untitled 2.png")
     
@@ -37,20 +37,25 @@ struct SearchBar2: UIViewRepresentable {
         
         //MARK: Some examples of Search Bar customisation 
         
-        searchBar2.searchBarStyle = .minimal
-        //search bar style: minimal removes background and gives a cleaner appearance
         searchBar2.delegate = context.coordinator
         //delegate of the search bar to modify its behaviour
+        
+        searchBar2.searchBarStyle = .default
+        //search bar style: minimal removes background and gives a cleaner appearance
         searchBar2.autocapitalizationType = .words
         //autocapitalization for the first letter of each word
-        searchBar2.placeholder = "Search..."
+        searchBar2.placeholder = "Type to search..."
         //text displayed on top of the search bar
-        searchBar2.prompt = "Prompt..."
+        searchBar2.prompt = "Custom search bar..."
         //line of text to be displayed on top of the search bar
-        searchBar2.barTintColor = .red
+        searchBar2.barTintColor = color
         //tint color of the bar's background, no effect if searchBarStyle is minimal
-        searchBar2.tintColor = .red
+        searchBar2.tintColor = color
         //tint color of the bar's main element
+        searchBar2.setImage(UIImage(systemName: "arrow.up.circle.fill"), for: .search, state: .normal)
+        //change the search bar icon
+        searchBar2.setSearchFieldBackgroundImage(backgroundImage, for: .normal)
+        //sets a background image for the search field
         
         return searchBar2
         
@@ -58,12 +63,12 @@ struct SearchBar2: UIViewRepresentable {
     
     func updateUIView(_ uiView: UISearchBar, context: UIViewRepresentableContext<SearchBar2>) {
         uiView.text = text
-    }//updated state of the view
+    }//updated state of the view when text changes
     
 }
 
 struct SearchBar2_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBar2(text: .constant(""))
+        SearchBar2(text: .constant(""), color: .green)
     }
 }
