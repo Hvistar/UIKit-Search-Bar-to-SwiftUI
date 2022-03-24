@@ -12,4 +12,5 @@ struct Client: Hashable {
     var name: String
     var surname: String
     var address: String
+    
 }
