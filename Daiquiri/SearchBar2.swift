@@ -51,8 +51,13 @@ struct SearchBar2: UIViewRepresentable {
         
         searchBar2.searchBarStyle = .default
         //search bar style: minimal removes background and gives a cleaner appearance
-        searchBar2.autocapitalizationType = .words
-        //autocapitalization for the first letter of each word
+        searchBar2.autocapitalizationType = .sentences
+        /*
+         autocapitalization settings:
+         .sentences
+         .words
+         .none
+         */
         searchBar2.placeholder = placeholder
         //text displayed on top of the search bar
         searchBar2.prompt = prompt

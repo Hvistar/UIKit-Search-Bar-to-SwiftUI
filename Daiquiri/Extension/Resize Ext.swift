@@ -16,6 +16,8 @@ extension UIImage {
     }
 }
 
+//resizes the image into a rectangle
+
 public extension UIImage {
   func round(_ radius: CGFloat) -> UIImage {
         let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
@@ -48,6 +50,9 @@ public extension UIImage {
         }
         return result
     }
+    
+    // rounds the rectangle
+
 }
 
 //resizes the image in "size" rectangle to adapt it into the interface
