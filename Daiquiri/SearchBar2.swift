@@ -100,7 +100,7 @@ struct SearchBar2: UIViewRepresentable {
         //sets typing text colour
         
         if let textfieldPlaceholder = searchBar2.value(forKey: "searchField") as? UITextField {
-            textfieldPlaceholder.attributedPlaceholder = NSAttributedString(string: textfieldPlaceholder.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : placeholderColor])
+            textfieldPlaceholder.attributedPlaceholder = NSAttributedString(string: textfieldPlaceholder.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : placeholderColor as Any])
         }
         //sets placeholder text colour, it needs to access the UITextField of the searchBar
         
