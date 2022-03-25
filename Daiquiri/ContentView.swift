@@ -26,7 +26,7 @@ struct ContentView: View {
             
             VStack(alignment: .leading){
                 
-                SearchBar2(text: self.$searchText, placeholder: "Type to search...", prompt: "Custom search bar", elementColor: .systemPurple, barColor: .systemGray5, searchFieldColor: nil, searchTextColor: .systemPurple, placeholderColor: UIColor(red: 0.36, green: 0.34, blue: 0.0, alpha: 1.0), backgroundImage: UIImage(named: "Pattern.jpeg"), searchIcon: UIImage(systemName: "text.magnifyingglass")?.withTintColor(UIColor(red: 0.46, green: 0.34, blue: 0.0, alpha: 1.0), renderingMode: .alwaysOriginal))
+                SearchBar2(text: self.$searchText, placeholder: "Search...", prompt: "", elementColor: nil, barColor: nil, searchFieldColor: nil, searchTextColor: nil, placeholderColor: .systemGray, backgroundImage: nil, searchIcon: nil)
                 //customised search bar call, colors and images are optionals: do not specify anything if you want default settings
                 
                 List{
