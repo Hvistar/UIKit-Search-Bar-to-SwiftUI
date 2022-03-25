@@ -44,10 +44,10 @@ struct SearchBar2: UIViewRepresentable {
         let searchBar2 = UISearchBar(frame: .zero)
         //location and size of the search bar on declaration
         
-        //MARK: Some examples of Search Bar customisation 
-        
         searchBar2.delegate = context.coordinator
         //delegate of the search bar to modify its behaviour
+        
+        //MARK: Some examples of Search Bar customisation
         
         searchBar2.searchBarStyle = .default
         //search bar style: minimal removes background and gives a cleaner appearance
