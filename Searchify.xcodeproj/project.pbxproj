@@ -14,9 +14,7 @@
 		7661C26627E9DCB300B5511E /* DaiquiriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C26527E9DCB300B5511E /* DaiquiriTests.swift */; };
 		7661C27027E9DCB300B5511E /* DaiquiriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C26F27E9DCB300B5511E /* DaiquiriUITests.swift */; };
 		7661C27227E9DCB300B5511E /* DaiquiriUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C27127E9DCB300B5511E /* DaiquiriUITestsLaunchTests.swift */; };
-		7661C27F27E9DCFA00B5511E /* SearchBar2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C27E27E9DCFA00B5511E /* SearchBar2.swift */; };
-		76867AD427EB3D53009A00F8 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76867AD327EB3D53009A00F8 /* Client.swift */; };
-		76867AD627EB3F8D009A00F8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76867AD527EB3F8D009A00F8 /* Data.swift */; };
+		7661C27F27E9DCFA00B5511E /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C27E27E9DCFA00B5511E /* SearchBar.swift */; };
 		76867AD827EC71E7009A00F8 /* Resize Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76867AD727EC71E7009A00F8 /* Resize Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,9 +46,7 @@
 		7661C26B27E9DCB300B5511E /* DaiquiriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaiquiriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7661C26F27E9DCB300B5511E /* DaiquiriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiquiriUITests.swift; sourceTree = "<group>"; };
 		7661C27127E9DCB300B5511E /* DaiquiriUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiquiriUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		7661C27E27E9DCFA00B5511E /* SearchBar2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar2.swift; sourceTree = "<group>"; };
-		76867AD327EB3D53009A00F8 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		76867AD527EB3F8D009A00F8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		7661C27E27E9DCFA00B5511E /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		76867AD727EC71E7009A00F8 /* Resize Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resize Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +78,7 @@
 		7661C24827E9DCB200B5511E = {
 			isa = PBXGroup;
 			children = (
-				7661C25327E9DCB200B5511E /* Daiquiri */,
+				7661C25327E9DCB200B5511E /* SearchBar */,
 				7661C26427E9DCB300B5511E /* DaiquiriTests */,
 				7661C26E27E9DCB300B5511E /* DaiquiriUITests */,
 				7661C25227E9DCB200B5511E /* Products */,
@@ -99,18 +95,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7661C25327E9DCB200B5511E /* Daiquiri */ = {
+		7661C25327E9DCB200B5511E /* SearchBar */ = {
 			isa = PBXGroup;
 			children = (
 				7661C25427E9DCB200B5511E /* DaiquiriApp.swift */,
-				7661C27E27E9DCFA00B5511E /* SearchBar2.swift */,
+				7661C27E27E9DCFA00B5511E /* SearchBar.swift */,
 				7661C25627E9DCB200B5511E /* ContentView.swift */,
 				76867AD927EC76B0009A00F8 /* Extension */,
-				76867ADA27EC76CD009A00F8 /* Data */,
 				7661C25827E9DCB300B5511E /* Assets.xcassets */,
 				7661C25A27E9DCB300B5511E /* Preview Content */,
 			);
-			path = Daiquiri;
+			path = SearchBar;
 			sourceTree = "<group>";
 		};
 		7661C25A27E9DCB300B5511E /* Preview Content */ = {
@@ -144,15 +139,6 @@
 				76867AD727EC71E7009A00F8 /* Resize Ext.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		76867ADA27EC76CD009A00F8 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				76867AD327EB3D53009A00F8 /* Client.swift */,
-				76867AD527EB3F8D009A00F8 /* Data.swift */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7661C24C27E9DCB200B5511E /* Build configuration list for PBXProject "Daiquiri" */;
+			buildConfigurationList = 7661C24C27E9DCB200B5511E /* Build configuration list for PBXProject "Searchify" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -286,9 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76867AD827EC71E7009A00F8 /* Resize Ext.swift in Sources */,
-				7661C27F27E9DCFA00B5511E /* SearchBar2.swift in Sources */,
-				76867AD627EB3F8D009A00F8 /* Data.swift in Sources */,
-				76867AD427EB3D53009A00F8 /* Client.swift in Sources */,
+				7661C27F27E9DCFA00B5511E /* SearchBar.swift in Sources */,
 				7661C25727E9DCB200B5511E /* ContentView.swift in Sources */,
 				7661C25527E9DCB200B5511E /* DaiquiriApp.swift in Sources */,
 			);
@@ -448,7 +432,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Daiquiri/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SearchBar/Preview Content\"";
 				DEVELOPMENT_TEAM = KSNTS7VQAQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -477,7 +461,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Daiquiri/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SearchBar/Preview Content\"";
 				DEVELOPMENT_TEAM = KSNTS7VQAQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -578,7 +562,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7661C24C27E9DCB200B5511E /* Build configuration list for PBXProject "Daiquiri" */ = {
+		7661C24C27E9DCB200B5511E /* Build configuration list for PBXProject "Searchify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7661C27327E9DCB300B5511E /* Debug */,
