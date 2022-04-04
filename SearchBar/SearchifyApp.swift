@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct DaiquiriApp: App {
+struct SearchifyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7661C25527E9DCB200B5511E /* DaiquiriApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C25427E9DCB200B5511E /* DaiquiriApp.swift */; };
+		7661C25527E9DCB200B5511E /* SearchifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C25427E9DCB200B5511E /* SearchifyApp.swift */; };
 		7661C25727E9DCB200B5511E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C25627E9DCB200B5511E /* ContentView.swift */; };
 		7661C25927E9DCB300B5511E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7661C25827E9DCB300B5511E /* Assets.xcassets */; };
 		7661C25C27E9DCB300B5511E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7661C25B27E9DCB300B5511E /* Preview Assets.xcassets */; };
-		7661C26627E9DCB300B5511E /* DaiquiriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C26527E9DCB300B5511E /* DaiquiriTests.swift */; };
-		7661C27027E9DCB300B5511E /* DaiquiriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C26F27E9DCB300B5511E /* DaiquiriUITests.swift */; };
-		7661C27227E9DCB300B5511E /* DaiquiriUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C27127E9DCB300B5511E /* DaiquiriUITestsLaunchTests.swift */; };
 		7661C27F27E9DCFA00B5511E /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661C27E27E9DCFA00B5511E /* SearchBar.swift */; };
 		76867AD827EC71E7009A00F8 /* Resize Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76867AD727EC71E7009A00F8 /* Resize Ext.swift */; };
 /* End PBXBuildFile section */
@@ -37,15 +34,12 @@
 
 /* Begin PBXFileReference section */
 		7661C25127E9DCB200B5511E /* Daiquiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daiquiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7661C25427E9DCB200B5511E /* DaiquiriApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiquiriApp.swift; sourceTree = "<group>"; };
+		7661C25427E9DCB200B5511E /* SearchifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchifyApp.swift; sourceTree = "<group>"; };
 		7661C25627E9DCB200B5511E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7661C25827E9DCB300B5511E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7661C25B27E9DCB300B5511E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7661C26127E9DCB300B5511E /* DaiquiriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaiquiriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7661C26527E9DCB300B5511E /* DaiquiriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiquiriTests.swift; sourceTree = "<group>"; };
 		7661C26B27E9DCB300B5511E /* DaiquiriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaiquiriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7661C26F27E9DCB300B5511E /* DaiquiriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiquiriUITests.swift; sourceTree = "<group>"; };
-		7661C27127E9DCB300B5511E /* DaiquiriUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiquiriUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7661C27E27E9DCFA00B5511E /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		76867AD727EC71E7009A00F8 /* Resize Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resize Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,8 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				7661C25327E9DCB200B5511E /* SearchBar */,
-				7661C26427E9DCB300B5511E /* DaiquiriTests */,
-				7661C26E27E9DCB300B5511E /* DaiquiriUITests */,
 				7661C25227E9DCB200B5511E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,7 +90,7 @@
 		7661C25327E9DCB200B5511E /* SearchBar */ = {
 			isa = PBXGroup;
 			children = (
-				7661C25427E9DCB200B5511E /* DaiquiriApp.swift */,
+				7661C25427E9DCB200B5511E /* SearchifyApp.swift */,
 				7661C27E27E9DCFA00B5511E /* SearchBar.swift */,
 				7661C25627E9DCB200B5511E /* ContentView.swift */,
 				76867AD927EC76B0009A00F8 /* Extension */,
@@ -114,23 +106,6 @@
 				7661C25B27E9DCB300B5511E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		7661C26427E9DCB300B5511E /* DaiquiriTests */ = {
-			isa = PBXGroup;
-			children = (
-				7661C26527E9DCB300B5511E /* DaiquiriTests.swift */,
-			);
-			path = DaiquiriTests;
-			sourceTree = "<group>";
-		};
-		7661C26E27E9DCB300B5511E /* DaiquiriUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7661C26F27E9DCB300B5511E /* DaiquiriUITests.swift */,
-				7661C27127E9DCB300B5511E /* DaiquiriUITestsLaunchTests.swift */,
-			);
-			path = DaiquiriUITests;
 			sourceTree = "<group>";
 		};
 		76867AD927EC76B0009A00F8 /* Extension */ = {
@@ -274,7 +249,7 @@
 				76867AD827EC71E7009A00F8 /* Resize Ext.swift in Sources */,
 				7661C27F27E9DCFA00B5511E /* SearchBar.swift in Sources */,
 				7661C25727E9DCB200B5511E /* ContentView.swift in Sources */,
-				7661C25527E9DCB200B5511E /* DaiquiriApp.swift in Sources */,
+				7661C25527E9DCB200B5511E /* SearchifyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7661C26627E9DCB300B5511E /* DaiquiriTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7661C27227E9DCB300B5511E /* DaiquiriUITestsLaunchTests.swift in Sources */,
-				7661C27027E9DCB300B5511E /* DaiquiriUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
